@@ -1,0 +1,2821 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LOD 訪問者調べ用</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <header>
+    <h1><img src="img/h1.png" width="293" height="79" alt="LORD OF DUNGEON 訪問者調べ用"></h1>
+  </header>
+  <nav>
+    <ul>
+      <li class="block"><a href="#mob">訪問者の好みのモンスター</a></li>
+      <li><a href="#fac">訪問者の好みの施設</a></li>
+      <li><a href="#vis">施設ごとの訪問者</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="tab" id="mob">
+      <h2>訪問者の好みのモンスター</h2>
+      <div id="visited">
+        <h3>呼びたい訪問者</h3>
+        <div>
+          <section>
+            <h4>か行</h4>
+            <ul>
+              <li>
+                <label for="gaikoukan">外交官
+                  <input type="checkbox" value="gaikoukan" id="gaikoukan">
+                </label>
+              </li>
+              <li>
+                <label for="kaizoku">海賊
+                  <input type="checkbox" value="kaizoku" id="kaizoku">
+                </label>
+              </li>
+              <li>
+                <label for="kakutouka">格闘家
+                  <input type="checkbox" value="kakutouka" id="kakutouka">
+                </label>
+              </li>
+              <li>
+                <label for="kakumeika">革命家
+                  <input type="checkbox" value="kakumeika" id="kakumeika">
+                </label>
+              </li>
+              <li>
+                <label for="kishi">騎士
+                  <input type="checkbox" value="kishi" id="kishi">
+                </label>
+              </li>
+              <li>
+                <label for="geijutsuka">芸術家
+                  <input type="checkbox" value="geijutsuka" id="geijutsuka">
+                </label>
+              </li>
+              <li>
+                <label for="geinin">芸人
+                  <input type="checkbox" value="geinin" id="geinin">
+                </label>
+              </li>
+              <li>
+                <label for="kenshi">剣士
+                  <input type="checkbox" value="kenshi" id="kenshi">
+                </label>
+              </li>
+              <li>
+                <label for="kenchikuka">建築家
+                  <input type="checkbox" value="kenchikuka" id="kenchikuka">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>さ行</h4>
+            <ul>
+              <li>
+                <label for="sagishi">詐欺師
+                  <input type="checkbox" value="sagishi" id="sagishi">
+                </label>
+              </li>
+              <li>
+                <label for="sasurainin">さすらい人
+                  <input type="checkbox" value="sasurainin" id="sasurainin">
+                </label>
+              </li>
+              <li>
+                <label for="shikyo">司教
+                  <input type="checkbox" value="shikyo" id="shikyo">
+                </label>
+              </li>
+              <li>
+                <label for="shisuta">シスター
+                  <input type="checkbox" value="shisuta" id="shisuta">
+                </label>
+              </li>
+              <li>
+                <label for="shijin">詩人
+                  <input type="checkbox" value="shijin" id="shijin">
+                </label>
+              </li>
+              <li>
+                <label for="shudoshi">修道士
+                  <input type="checkbox" value="shudoshi" id="shudoshi">
+                </label>
+              </li>
+              <li>
+                <label for="shogun">将軍
+                  <input type="checkbox" value="shogun" id="shogun">
+                </label>
+              </li>
+              <li>
+                <label for="shonin">商人
+                  <input type="checkbox" value="shonin" id="shonin">
+                </label>
+              </li>
+              <li>
+                <label for="zeikinchoshukan">税金徴収官
+                  <input type="checkbox" value="zeikinchoshukan" id="zeikinchoshukan">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>た行</h4>
+            <ul>
+              <li>
+                <label for="daishonin">大商人
+                  <input type="checkbox" value="daishonin" id="daishonin">
+                </label>
+              </li>
+              <li>
+                <label for="daifugo">大富豪
+                  <input type="checkbox" value="daifugo" id="daifugo">
+                </label>
+              </li>
+              <li>
+                <label for="tetsugakusha">哲学者
+                  <input type="checkbox" value="tetsugakusha" id="tetsugakusha">
+                </label>
+              </li>
+              <li>
+                <label for="tozoku">盗賊
+                  <input type="checkbox" value="tozoku" id="tozoku">
+                </label>
+              </li>
+              <li>
+                <label for="toshihyoronka">都市評論家
+                  <input type="checkbox" value="toshihyoronka" id="toshihyoronka">
+                </label>
+              </li>
+              <li>
+                <label for="dorobo">泥棒
+                  <input type="checkbox" value="dorobo" id="dorobo">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>な行</h4>
+            <ul>
+              <li>
+                <label for="nofu">農夫
+                  <input type="checkbox" value="nofu" id="nofu">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>は行</h4>
+            <ul>
+              <li>
+                <label for="hanta">ハンター
+                  <input type="checkbox" value="hanta" id="hanta">
+                </label>
+              </li>
+              <li>
+                <label for="bokenka">冒険家
+                  <input type="checkbox" value="bokenka" id="bokenka">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>ま行</h4>
+            <ul>
+              <li>
+                <label for="majo">魔女
+                  <input type="checkbox" value="majo" id="majo">
+                </label>
+              </li>
+              <li>
+                <label for="mahotsukai">魔法使い
+                  <input type="checkbox" value="mahotsukai" id="mahotsukai">
+                </label>
+              </li>
+              <li>
+                <label for="mandanka">漫談家
+                  <input type="checkbox" value="mandanka" id="mandanka">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>や行</h4>
+            <ul>
+              <li>
+                <label for="yamishonin">闇商人
+                  <input type="checkbox" value="yamishonin" id="yamishonin">
+                </label>
+              </li>
+              <li>
+                <label for="yumitsukai">弓使い
+                  <input type="checkbox" value="yumitsukai" id="yumitsukai">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>ら行</h4>
+            <ul>
+              <li>
+                <label for="ryokosha">旅行者
+                  <input type="checkbox" value="ryokosha" id="ryokosha">
+                </label>
+              </li>
+              <li>
+                <label for="renkinjutsushi">錬金術師
+                  <input type="checkbox" value="renkinjutsushi" id="renkinjutsushi">
+                </label>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <div id="m_visited">
+        <h3>除外したい訪問者</h3>
+        <div>
+          <section>
+            <h4>か行</h4>
+            <ul>
+              <li>
+                <label for="m01">外交官
+                  <input type="checkbox" value="gaikoukan" id="m01">
+                </label>
+              </li>
+              <li>
+                <label for="m02">海賊
+                  <input type="checkbox" value="kaizoku" id="m02">
+                </label>
+              </li>
+              <li>
+                <label for="m03">格闘家
+                  <input type="checkbox" value="kakutouka" id="m03">
+                </label>
+              </li>
+              <li>
+                <label for="m04">革命家
+                  <input type="checkbox" value="kakumeika" id="m04">
+                </label>
+              </li>
+              <li>
+                <label for="m05">騎士
+                  <input type="checkbox" value="kishi" id="m05">
+                </label>
+              </li>
+              <li>
+                <label for="m06">芸術家
+                  <input type="checkbox" value="geijutsuka" id="m06">
+                </label>
+              </li>
+              <li>
+                <label for="m07">芸人
+                  <input type="checkbox" value="geinin" id="m07">
+                </label>
+              </li>
+              <li>
+                <label for="m08">剣士
+                  <input type="checkbox" value="kenshi" id="m08">
+                </label>
+              </li>
+              <li>
+                <label for="m09">建築家
+                  <input type="checkbox" value="kenchikuka" id="m09">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>さ行</h4>
+            <ul>
+              <li>
+                <label for="m10">詐欺師
+                  <input type="checkbox" value="sagishi" id="m10">
+                </label>
+              </li>
+              <li>
+                <label for="m11">さすらい人
+                  <input type="checkbox" value="sasurainin" id="m11">
+                </label>
+              </li>
+              <li>
+                <label for="m12">司教
+                  <input type="checkbox" value="shikyo" id="m12">
+                </label>
+              </li>
+              <li>
+                <label for="m13">シスター
+                  <input type="checkbox" value="shisuta" id="m13">
+                </label>
+              </li>
+              <li>
+                <label for="m14">詩人
+                  <input type="checkbox" value="shijin" id="m14">
+                </label>
+              </li>
+              <li>
+                <label for="m15">修道士
+                  <input type="checkbox" value="shudoshi" id="m15">
+                </label>
+              </li>
+              <li>
+                <label for="m16">将軍
+                  <input type="checkbox" value="shogun" id="m16">
+                </label>
+              </li>
+              <li>
+                <label for="m17">商人
+                  <input type="checkbox" value="shonin" id="m17">
+                </label>
+              </li>
+              <li>
+                <label for="m18">税金徴収官
+                  <input type="checkbox" value="zeikinchoshukan" id="m18">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>た行</h4>
+            <ul>
+              <li>
+                <label for="m19">大商人
+                  <input type="checkbox" value="daishonin" id="m19">
+                </label>
+              </li>
+              <li>
+                <label for="m20">大富豪
+                  <input type="checkbox" value="daifugo" id="m20">
+                </label>
+              </li>
+              <li>
+                <label for="m21">哲学者
+                  <input type="checkbox" value="tetsugakusha" id="m21">
+                </label>
+              </li>
+              <li>
+                <label for="m22">盗賊
+                  <input type="checkbox" value="tozoku" id="m22">
+                </label>
+              </li>
+              <li>
+                <label for="m23">都市評論家
+                  <input type="checkbox" value="toshihyoronka" id="m23">
+                </label>
+              </li>
+              <li>
+                <label for="m24">泥棒
+                  <input type="checkbox" value="dorobo" id="m24">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>な行</h4>
+            <ul>
+              <li>
+                <label for="m25">農夫
+                  <input type="checkbox" value="nofu" id="m25">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>は行</h4>
+            <ul>
+              <li>
+                <label for="m26">ハンター
+                  <input type="checkbox" value="hanta" id="m26">
+                </label>
+              </li>
+              <li>
+                <label for="m27">冒険家
+                  <input type="checkbox" value="bokenka" id="m27">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>ま行</h4>
+            <ul>
+              <li>
+                <label for="m28">魔女
+                  <input type="checkbox" value="majo" id="m28">
+                </label>
+              </li>
+              <li>
+                <label for="m29">魔法使い
+                  <input type="checkbox" value="mahotsukai" id="m29">
+                </label>
+              </li>
+              <li>
+                <label for="m30">漫談家
+                  <input type="checkbox" value="mandanka" id="m30">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>や行</h4>
+            <ul>
+              <li>
+                <label for="m31">闇商人
+                  <input type="checkbox" value="yamishonin" id="m31">
+                </label>
+              </li>
+              <li>
+                <label for="m32">弓使い
+                  <input type="checkbox" value="yumitsukai" id="m32">
+                </label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h4>ら行</h4>
+            <ul>
+              <li>
+                <label for="m33">旅行者
+                  <input type="checkbox" value="ryokosha" id="m33">
+                </label>
+              </li>
+              <li>
+                <label for="m34">錬金術師
+                  <input type="checkbox" value="renkinjutsushi" id="m34">
+                </label>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+      <h3>結果 0件</h3>
+      <div id="result">
+        <div class="mori sasurainin"><img src="img/img-guraimu.png" width="100" height="145" alt="">グライム
+          <ul>
+            <li>さすらい人</li>
+          </ul>
+        </div>
+        <div class="hikari ryokosha"><img src="img/img-kiraimu.png" width="100" height="145" alt="">キライム
+          <ul>
+            <li>旅行者</li>
+          </ul>
+        </div>
+        <div class="hikari ryokosha"><img src="img/img-gurun.png" width="100" height="145" alt="">グルン
+          <ul>
+            <li>旅行者</li>
+          </ul>
+        </div>
+        <div class="yami bokenka"><img src="img/img-buraunnia.png" width="100" height="145" alt="">ブラウンニア
+          <ul>
+            <li>冒険家</li>
+          </ul>
+        </div>
+        <div class="mizu sasurainin"><img src="img/img-derufuin.png" width="100" height="145" alt="">デルフィン
+          <ul>
+            <li>さすらい人</li>
+          </ul>
+        </div>
+        <div class="hi nofu hanta"><img src="img/img-uicchi.png" width="100" height="145" alt="">ウィッチ
+          <ul>
+            <li>農夫</li>
+            <li>ハンター</li>
+          </ul>
+        </div>
+        <div class="mizu shonin dorobo"><img src="img/img-dosuto.png" width="100" height="145" alt="">ドースト
+          <ul>
+            <li>商人</li>
+            <li>泥棒</li>
+          </ul>
+        </div>
+        <div class="yami shonin hanta"><img src="img/img-howaitonia.png" width="100" height="145" alt="">ホワイトニア
+          <ul>
+            <li>商人</li>
+            <li>ハンター</li>
+          </ul>
+        </div>
+        <div class="mori dorobo nofu"><img src="img/img-kurun.png" width="100" height="145" alt="">クルン
+          <ul>
+            <li>泥棒</li>
+            <li>農夫</li>
+          </ul>
+        </div>
+        <div class="mizu nofu hanta"><img src="img/img-buraimu.png" width="100" height="145" alt="">ブライム
+          <ul>
+            <li>農夫</li>
+            <li>ハンター</li>
+          </ul>
+        </div>
+        <div class="yami shonin nofu mahotsukai"><img src="img/img-ribon.png" width="100" height="145" alt="">リボン
+          <ul>
+            <li>商人</li>
+            <li>農夫</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="mori kenshi shonin hanta"><img src="img/img-okkusu.png" width="100" height="145" alt="">オックス
+          <ul>
+            <li>剣士</li>
+            <li>商人</li>
+            <li>ハンター</li>
+          </ul>
+        </div>
+        <div class="mizu kakutouka dorobo nofu"><img src="img/img-uotadoggu.png" width="100" height="145" alt="">ウォータードッグ
+          <ul>
+            <li>格闘家</li>
+            <li>泥棒</li>
+            <li>農夫</li>
+          </ul>
+        </div>
+        <div class="mori shonin hanta mahotsukai"><img src="img/img-upi.png" width="100" height="145" alt="">ウーピー
+          <ul>
+            <li>商人</li>
+            <li>ハンター</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="hi kakutouka dorobo hanta"><img src="img/img-karufuin.png" width="100" height="145" alt="">カルフィン
+          <ul>
+            <li>格闘家</li>
+            <li>泥棒</li>
+            <li>ハンター</li>
+          </ul>
+        </div>
+        <div class="mizu kenshi dorobo hanta"><img src="img/img-champon.png" width="100" height="145" alt="">チャンポーン
+          <ul>
+            <li>剣士</li>
+            <li>泥棒</li>
+            <li>ハンター</li>
+          </ul>
+        </div>
+        <div class="hi dorobo nofu mahotsukai"><img src="img/img-akakujira.png" width="100" height="145" alt="">赤クジラ
+          <ul>
+            <li>泥棒</li>
+            <li>農夫</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="hi tozoku dorobo nofu"><img src="img/img-fuausuto.png" width="100" height="145" alt="">ファウスト
+          <ul>
+            <li>盗賊</li>
+            <li>泥棒</li>
+            <li>農夫</li>
+          </ul>
+        </div>
+        <div class="hikari kenshi shonin hanta"><img src="img/img-kuroze.png" width="100" height="145" alt="">クローゼ
+          <ul>
+            <li>剣士</li>
+            <li>商人</li>
+            <li>ハンター</li>
+          </ul>
+        </div>
+        <div class="yami shonin dorobo mahotsukai"><img src="img/img-murasakikujira.png" width="100" height="145" alt="">紫クジラ
+          <ul>
+            <li>商人</li>
+            <li>泥棒</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="hi tozoku majo yumitsukai"><img src="img/img-reimu.png" width="100" height="145" alt="">レイム
+          <ul>
+            <li>盗賊</li>
+            <li>魔女</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="mori kenshi majo mahotsukai"><img src="img/img-kerufuin.png" width="100" height="145" alt="">ケルフィン
+          <ul>
+            <li>剣士</li>
+            <li>魔女</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="hi kakutouka shijin mahotsukai"><img src="img/img-eraimu.png" width="100" height="145" alt="">エライム
+          <ul>
+            <li>格闘家</li>
+            <li>詩人</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="hikari kakutouka shisuta yumitsukai"><img src="img/img-jinjaman.png" width="100" height="145" alt="">ジンジャーマン
+          <ul>
+            <li>格闘家</li>
+            <li>シスター</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="yami kakutouka kishi kenshi"><img src="img/img-keramento.png" width="100" height="145" alt="">ケラメント
+          <ul>
+            <li>格闘家</li>
+            <li>騎士</li>
+            <li>剣士</li>
+          </ul>
+        </div>
+        <div class="hi kakutouka kenshi majo"><img src="img/img-fuaiabukku.png" width="100" height="145" alt="">ファイアーブック
+          <ul>
+            <li>格闘家</li>
+            <li>剣士</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hikari kishi tozoku mahotsukai"><img src="img/img-kurufuin.png" width="100" height="145" alt="">クールフィン
+          <ul>
+            <li>騎士</li>
+            <li>盗賊</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="hikari kakutouka tozokuv yamishonin"><img src="img/img-fuiramento.png" width="100" height="145" alt="">フィラメント
+          <ul>
+            <li>格闘家</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mori kakutouka tozoku majo"><img src="img/img-fuoresutonia.png" width="100" height="145" alt="">フォレストニア
+          <ul>
+            <li>格闘家</li>
+            <li>盗賊</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="mizu kishi tozoku yumitsukai"><img src="img/img-mahokirin.png" width="100" height="145" alt="">魔法キリン
+          <ul>
+            <li>騎士</li>
+            <li>盗賊</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="hi kishi kenshi tozoku"><img src="img/img-harouin.png" width="100" height="145" alt="">ハロウィン
+          <ul>
+            <li>騎士</li>
+            <li>剣士</li>
+            <li>盗賊</li>
+          </ul>
+        </div>
+        <div class="yami kakutouka kishi tozoku"><img src="img/img-poizunbukku.png" width="100" height="145" alt="">ポイズンブック
+          <ul>
+            <li>格闘家</li>
+            <li>騎士</li>
+            <li>盗賊</li>
+          </ul>
+        </div>
+        <div class="mori shisuta mahotsukai yumitsukai"><img src="img/img-kyuteiporu.png" width="100" height="145" alt="">キューティーポール
+          <ul>
+            <li>シスター</li>
+            <li>魔法使い</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="mori shijin tozoku yumitsukai"><img src="img/img-pori.png" width="100" height="145" alt="">ポーリー
+          <ul>
+            <li>詩人</li>
+            <li>盗賊</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="mizu kakutouka kenshi shudoshi"><img src="img/img-buruto.png" width="100" height="145" alt="">ブルート
+          <ul>
+            <li>格闘家</li>
+            <li>剣士</li>
+            <li>修道士</li>
+          </ul>
+        </div>
+        <div class="yami kenshi shudoshi mahotsukai"><img src="img/img-gadoporu.png" width="100" height="145" alt="">ガードポール
+          <ul>
+            <li>剣士</li>
+            <li>修道士</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="mizu kenshi tozoku majo"><img src="img/img-gosuto.png" width="100" height="145" alt="">ゴースト
+          <ul>
+            <li>剣士</li>
+            <li>盗賊</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="mori kenshi tozoku yamishonin"><img src="img/img-suraimuraisu.png" width="100" height="145" alt="">スライムライス
+          <ul>
+            <li>剣士</li>
+            <li>盗賊</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mizu tozoku yamishonin yumitsukai"><img src="img/img-akuabukku.png" width="100" height="145" alt="">アクアブック
+          <ul>
+            <li>盗賊</li>
+            <li>闇商人</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="mori kishi tozoku mahotsukai"><img src="img/img-enshiendoggu.png" width="100" height="145" alt="">エンシェンドッグ
+          <ul>
+            <li>騎士</li>
+            <li>盗賊</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="mizu tozoku yamishonin yumitsukai"><img src="img/img-jientoruman.png" width="100" height="145" alt="">ジェントルマン
+          <ul>
+            <li>盗賊</li>
+            <li>闇商人</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="hi kishi geinin shisuta mahotsukai"><img src="img/img-macchihatto.png" width="100" height="145" alt="">マッチハット
+          <ul>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="mizu shikyo shudoshi mahotsukai yamishonin"><img src="img/img-akuarihatto.png" width="100" height="145" alt="">アクアリーハット
+          <ul>
+            <li>司教</li>
+            <li>修道士</li>
+            <li>魔法使い</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mori kishi geijutsuka shisuta tozoku"><img src="img/img-uizuhatto.png" width="100" height="145" alt="">ウィズハット
+          <ul>
+            <li>騎士</li>
+            <li>芸術家</li>
+            <li>シスター</li>
+            <li>盗賊</li>
+          </ul>
+        </div>
+        <div class="hi kishi geinin shisuta yumitsukai"><img src="img/img-ranboruporu.png" width="100" height="145" alt="">ランボルポール
+          <ul>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="yami kenshi shijin daishonin yamishonin"><img src="img/img-roguba.png" width="100" height="145" alt="">ログバー
+          <ul>
+            <li>剣士</li>
+            <li>詩人</li>
+            <li>大商人</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hi shisuta daishonin tozoku majo"><img src="img/img-rifusu.png" width="100" height="145" alt="">リーフス
+          <ul>
+            <li>シスター</li>
+            <li>大商人</li>
+            <li>盗賊</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="mizu shijin shudoshi shogun yumitsukai"><img src="img/img-poka.png" width="100" height="145" alt="">ポーカー
+          <ul>
+            <li>詩人</li>
+            <li>修道士</li>
+            <li>将軍</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="mori gaikoukan shudoshi tozoku yamishonin"><img src="img/img-midorikujira.png" width="100" height="145" alt="">緑クジラ
+          <ul>
+            <li>外交官</li>
+            <li>修道士</li>
+            <li>盗賊</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hi gaikoukan kakutouka shisuta shudoshi"><img src="img/img-supaikurabu.png" width="100" height="145" alt="">スパイクラブ
+          <ul>
+            <li>外交官</li>
+            <li>格闘家</li>
+            <li>シスター</li>
+            <li>修道士</li>
+          </ul>
+        </div>
+        <div class="mizu kishi shudoshi daishonin mahotsukai"><img src="img/img-furubo.png" width="100" height="145" alt="">フルボー
+          <ul>
+            <li>騎士</li>
+            <li>修道士</li>
+            <li>大商人</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="mori kishi shikyo shudoshi tozoku"><img src="img/img-redeian.png" width="100" height="145" alt="">レディアン
+          <ul>
+            <li>騎士</li>
+            <li>司教</li>
+            <li>修道士</li>
+            <li>盗賊</li>
+          </ul>
+        </div>
+        <div class="yami shudoshi shogun mahotsukai yamishonin"><img src="img/img-yomu.png" width="100" height="145" alt="">ヨーム
+          <ul>
+            <li>修道士</li>
+            <li>将軍</li>
+            <li>魔法使い</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mori kakutouka shisuta shijin shogun"><img src="img/img-deiredei.png" width="100" height="145" alt="">デイレディー
+          <ul>
+            <li>格闘家</li>
+            <li>シスター</li>
+            <li>詩人</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="mori geinin shisuta shijin mahotsukai"><img src="img/img-maguroppusu.png" width="100" height="145" alt="">マグロップス
+          <ul>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>詩人</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="hikari kakutouka kishi shikyo shisuta"><img src="img/img-reddokuotsu.png" width="100" height="145" alt="">レッドクォーツ
+          <ul>
+            <li>格闘家</li>
+            <li>騎士</li>
+            <li>司教</li>
+            <li>シスター</li>
+          </ul>
+        </div>
+        <div class="hi gaikoukan kishi kenshi shijin"><img src="img/img-anguridoggu.png" width="100" height="145" alt="">アングリードッグ
+          <ul>
+            <li>外交官</li>
+            <li>騎士</li>
+            <li>剣士</li>
+            <li>詩人</li>
+          </ul>
+        </div>
+        <div class="hikari kishi kenchikuka tozoku majo"><img src="img/img-horon.png" width="100" height="145" alt="">ホロン
+          <ul>
+            <li>騎士</li>
+            <li>建築家</li>
+            <li>盗賊</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="mizu kishi shudoshi daishonin yumitsukai"><img src="img/img-kanibarurifu.png" width="100" height="145" alt="">カーニバルリーフ
+          <ul>
+            <li>騎士</li>
+            <li>修道士</li>
+            <li>大商人</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="yami shikyo shisuta shudoshi yumitsukai"><img src="img/img-kabocha.png" width="100" height="145" alt="">カボチャ
+          <ul>
+            <li>司教</li>
+            <li>シスター</li>
+            <li>修道士</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="hikari kishi geinin shijin mahotsukai"><img src="img/img-gorudotaimu.png" width="100" height="145" alt="">ゴールドタイム
+          <ul>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>詩人</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="hi kishi shikyo shudoshi mahotsukai"><img src="img/img-supaikushieru.png" width="100" height="145" alt="">スパイクシェル
+          <ul>
+            <li>騎士</li>
+            <li>司教</li>
+            <li>修道士</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan shijin mahotsukai yamishonin"><img src="img/img-porian.png" width="100" height="145" alt="">ポリアン
+          <ul>
+            <li>外交官</li>
+            <li>詩人</li>
+            <li>魔法使い</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mizu kenshi shikyo shudoshi majo"><img src="img/img-mintoman.png" width="100" height="145" alt="">ミントマン
+          <ul>
+            <li>剣士</li>
+            <li>司教</li>
+            <li>修道士</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="mizu kakutouka shisuta shogun yamishonin"><img src="img/img-umidaruma.png" width="100" height="145" alt="">海だるま
+          <ul>
+            <li>格闘家</li>
+            <li>シスター</li>
+            <li>将軍</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mori kakutouka shijin daishonin majo"><img src="img/img-chika.png" width="100" height="145" alt="">チーカ
+          <ul>
+            <li>格闘家</li>
+            <li>詩人</li>
+            <li>大商人</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hikari geinin shijin majo mahotsukai"><img src="img/img-amachampon.png" width="100" height="145" alt="">アーマーチャンポーン
+          <ul>
+            <li>芸人</li>
+            <li>詩人</li>
+            <li>魔女</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="mori kakutouka kishi shikyo shijin"><img src="img/img-kattosurottoman.png" width="100" height="145" alt="">カットスロットマン
+          <ul>
+            <li>格闘家</li>
+            <li>騎士</li>
+            <li>司教</li>
+            <li>詩人</li>
+          </ul>
+        </div>
+        <div class="mori kishi geijutsuka tozoku majo"><img src="img/img-mugidaruma.png" width="100" height="145" alt="">麦だるま
+          <ul>
+            <li>騎士</li>
+            <li>芸術家</li>
+            <li>盗賊</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hikari geinin kenshi shisuta shijin"><img src="img/img-kyandeiman.png" width="100" height="145" alt="">キャンディーマン
+          <ul>
+            <li>芸人</li>
+            <li>剣士</li>
+            <li>シスター</li>
+            <li>詩人</li>
+          </ul>
+        </div>
+        <div class="yami shijin daishonin tozoku majo"><img src="img/img-fuerukuro.png" width="100" height="145" alt="">フェルクロウ
+          <ul>
+            <li>詩人</li>
+            <li>大商人</li>
+            <li>盗賊</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="mizu geijutsuka shudoshi majo mahotsukai"><img src="img/img-keitodaruma.png" width="100" height="145" alt="">毛糸だるま
+          <ul>
+            <li>芸術家</li>
+            <li>修道士</li>
+            <li>魔女</li>
+            <li>魔法使い</li>
+          </ul>
+        </div>
+        <div class="mizu shikyo shisuta mahotsukai yamishonin"><img src="img/img-tosurifu.png" width="100" height="145" alt="">トゥースリーフ
+          <ul>
+            <li>司教</li>
+            <li>シスター</li>
+            <li>魔法使い</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="yami geinin shisuta majo yumitsukai"><img src="img/img-burakkunia.png" width="100" height="145" alt="">ブラックニア
+          <ul>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>魔女</li>
+            <li>弓使い</li>
+          </ul>
+        </div>
+        <div class="hi kakutouka kishi geinin shisuta"><img src="img/img-majishanroba.png" width="100" height="145" alt="">マジシャンロバ
+          <ul>
+            <li>格闘家</li>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>シスター</li>
+          </ul>
+        </div>
+        <div class="hi kishi shogun mahotsukai yamishonin"><img src="img/img-deyuaruchampon.png" width="100" height="145" alt="">デュアルチャンポーン
+          <ul>
+            <li>騎士</li>
+            <li>将軍</li>
+            <li>魔法使い</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan daishonin majo yamishonin"><img src="img/img-fuarukonedoggu.png" width="100" height="145" alt="">ファルコネドッグ
+          <ul>
+            <li>外交官</li>
+            <li>大商人</li>
+            <li>魔女</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan geinin shudoshi majo"><img src="img/img-purun.png" width="100" height="145" alt="">プルン
+          <ul>
+            <li>外交官</li>
+            <li>芸人</li>
+            <li>修道士</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hi kishi geijutsuka geinin majo"><img src="img/img-roiko.png" width="100" height="145" alt="">ロイコ
+          <ul>
+            <li>騎士</li>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka shudoshi shogun majo"><img src="img/img-gurencho.png" width="100" height="145" alt="">グレンチョ
+          <ul>
+            <li>芸術家</li>
+            <li>修道士</li>
+            <li>将軍</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="mori gaikoukan geijutsuka shisuta yamishonin"><img src="img/img-rombadeiru.png" width="100" height="145" alt="">ロンバディール
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>シスター</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan kishi shogun yamishonin"><img src="img/img-omunifuaiton.png" width="100" height="145" alt="">オムニファイトン
+          <ul>
+            <li>外交官</li>
+            <li>騎士</li>
+            <li>将軍</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hikari shikyo shisuta daishonin yamishonin"><img src="img/img-soruchifuten.png" width="100" height="145" alt="">ソウルチーフテン
+          <ul>
+            <li>司教</li>
+            <li>シスター</li>
+            <li>大商人</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mori kishi geinin shisuta shogun"><img src="img/img-debaindoggu.png" width="100" height="145" alt="">デバインドッグ
+          <ul>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="hi kishi geinin shisuta daishonin"><img src="img/img-meisuta.png" width="100" height="145" alt="">メイスター
+          <ul>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="yami kenchikuka shijin daishonin yamishonin"><img src="img/img-rejuka.png" width="100" height="145" alt="">レジューカ
+          <ul>
+            <li>建築家</li>
+            <li>詩人</li>
+            <li>大商人</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mizu geijutsuka geinin shisuta shudoshi"><img src="img/img-dakumisuto.png" width="100" height="145" alt="">ダークミスト
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>修道士</li>
+          </ul>
+        </div>
+        <div class="mori kishi kenchikuka shogun yamishonin"><img src="img/img-fuoreba.png" width="100" height="145" alt="">フォレバ
+          <ul>
+            <li>騎士</li>
+            <li>建築家</li>
+            <li>将軍</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hikari kishi kenchikuka daishonin yamishonin"><img src="img/img-raiteingudoggu.png" width="100" height="145" alt="">ライティングドッグ
+          <ul>
+            <li>騎士</li>
+            <li>建築家</li>
+            <li>大商人</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mori geijutsuka kenchikuka shudoshi majo"><img src="img/img-shieiko.png" width="100" height="145" alt="">シェイコ
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>修道士</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="mizu shikyo daishonin majo yamishonin"><img src="img/img-musun.png" width="100" height="145" alt="">ムースン
+          <ul>
+            <li>司教</li>
+            <li>大商人</li>
+            <li>魔女</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan kishi geijutsuka yamishonin"><img src="img/img-bureri.png" width="100" height="145" alt="">ブレーリー
+          <ul>
+            <li>外交官</li>
+            <li>騎士</li>
+            <li>芸術家</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka shudoshi shogun majo"><img src="img/img-burowa.png" width="100" height="145" alt="">ブローワ
+          <ul>
+            <li>芸術家</li>
+            <li>修道士</li>
+            <li>将軍</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hi geinin shisuta shudoshi daishonin"><img src="img/img-kuraudeiru.png" width="100" height="145" alt="">クラウディル
+          <ul>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>修道士</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hikari kenchikuka shijin shudoshi shogun"><img src="img/img-doroidogorudo.png" width="100" height="145" alt="">ドロイドゴールド
+          <ul>
+            <li>建築家</li>
+            <li>詩人</li>
+            <li>修道士</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="hikari kishi kenchikuka shikyo shudoshi"><img src="img/img-furerin.png" width="100" height="145" alt="">フレリン
+          <ul>
+            <li>騎士</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>修道士</li>
+          </ul>
+        </div>
+        <div class="hikari shikyo shisuta shijin shogun"><img src="img/img-asuboma.png" width="100" height="145" alt="">アースボマー
+          <ul>
+            <li>司教</li>
+            <li>シスター</li>
+            <li>詩人</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan shudoshi daishonin majo"><img src="img/img-maku.png" width="100" height="145" alt="">マーク
+          <ul>
+            <li>外交官</li>
+            <li>修道士</li>
+            <li>大商人</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hikari geinin shisuta daishonin yamishonin"><img src="img/img-doroidoshiruba.png" width="100" height="145" alt="">ドロイドシルバー
+          <ul>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>大商人</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka shikyo shisuta majo"><img src="img/img-fuaiauddo.png" width="100" height="145" alt="">ファイアーウッド
+          <ul>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>シスター</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan geinin shisuta yamishonin"><img src="img/img-peirudoggu.png" width="100" height="145" alt="">ペイルドッグ
+          <ul>
+            <li>外交官</li>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mori kenchikuka shikyo shijin yamishonin"><img src="img/img-juporu.png" width="100" height="145" alt="">呪ポール
+          <ul>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>詩人</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hikari geijutsuka geinin shijin yamishonin"><img src="img/img-yunifuin.png" width="100" height="145" alt="">ユニフィン
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>詩人</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mori geijutsuka kenchikuka shisuta yamishonin"><img src="img/img-runchifuton.png" width="100" height="145" alt="">ルンチーフトン
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>シスター</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="yami shudoshi shogun daishonin majo"><img src="img/img-baiko.png" width="100" height="145" alt="">バイコ
+          <ul>
+            <li>修道士</li>
+            <li>将軍</li>
+            <li>大商人</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hikari kishi geinin kenchikuka yamishonin"><img src="img/img-bikondoggu.png" width="100" height="145" alt="">ビーコンドッグ
+          <ul>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan kishi shisuta daishonin"><img src="img/img-misutajon.png" width="100" height="145" alt="">ミスタージョン
+          <ul>
+            <li>外交官</li>
+            <li>騎士</li>
+            <li>シスター</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="yami kishi kenchikuka shikyo majo"><img src="img/img-reberufuiru.png" width="100" height="145" alt="">レベルフィール
+          <ul>
+            <li>騎士</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka shisuta shudoshi daishonin"><img src="img/img-rikuton.png" width="100" height="145" alt="">リクトン
+          <ul>
+            <li>芸術家</li>
+            <li>シスター</li>
+            <li>修道士</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mizu kenchikuka shijin shogun yamishonin"><img src="img/img-naitofuiru.png" width="100" height="145" alt="">ナイトフィール
+          <ul>
+            <li>建築家</li>
+            <li>詩人</li>
+            <li>将軍</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="yami kishi shikyo shijin shogun"><img src="img/img-furantosu.png" width="100" height="145" alt="">フラントス
+          <ul>
+            <li>騎士</li>
+            <li>司教</li>
+            <li>詩人</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="yami geinin kenchikuka shogun daishonin"><img src="img/img-komedeian.png" width="100" height="145" alt="">コメディアン
+          <ul>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan kenchikuka shikyo shogun"><img src="img/img-dazurudoggu.png" width="100" height="145" alt="">ダズルドッグ
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan geijutsuka kenchikuka shogun"><img src="img/img-furedei.png" width="100" height="145" alt="">フレディー
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan kenchikuka shikyo shogun"><img src="img/img-rori.png" width="100" height="145" alt="">ロリー
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan kenchikuka shogun daishonin"><img src="img/img-reri.png" width="100" height="145" alt="">レリー
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="yami geijutsuka kenchikuka shikyo daishonin"><img src="img/img-metorodoggu.png" width="100" height="145" alt="">メトロドッグ
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mizu kenchikuka shikyo shogun daishonin"><img src="img/img-baburimo.png" width="100" height="145" alt="">バブリーモ
+          <ul>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan geijutsuka shikyo shogun"><img src="img/img-parencho.png" width="100" height="145" alt="">パレンチョ
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan geijutsuka kenchikuka shogun"><img src="img/img-purinsuton.png" width="100" height="145" alt="">プリンストーン
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="mori kenchikuka shikyo shogun daishonin"><img src="img/img-doroddoroido.png" width="100" height="145" alt="">ドロッドロイド
+          <ul>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka kenchikuka shogun daishonin"><img src="img/img-regurasu.png" width="100" height="145" alt="">レグラス
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mori gaikoukan geijutsuka kenchikuka shikyo"><img src="img/img-kakurantosu.png" width="100" height="145" alt="">カクラントス
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>司教</li>
+          </ul>
+        </div>
+        <div class="hikari geijutsuka geinin kenchikuka shogun"><img src="img/img-manraito.png" width="100" height="145" alt="">マンライト
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan geijutsuka geinin daishonin"><img src="img/img-agurasu.png" width="100" height="145" alt="">アグラス
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="yami geijutsuka shikyo shogun daishonin"><img src="img/img-deikuin.png" width="100" height="145" alt="">デイクイーン
+          <ul>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hi geinin kenchikuka shikyo shogun"><img src="img/img-derufuranko.png" width="100" height="145" alt="">デルフランコ
+          <ul>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan kenchikuka shikyo shogun"><img src="img/img-fuearifuin.png" width="100" height="145" alt="">フェアリーフィン
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="hi gaikoukan geinin kenchikuka shikyo"><img src="img/img-zakka.png" width="100" height="145" alt="">ザッカー
+          <ul>
+            <li>外交官</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>司教</li>
+          </ul>
+        </div>
+        <div class="mizu geijutsuka geinin shikyo daishonin"><img src="img/img-serafueza.png" width="100" height="145" alt="">セラフェザー
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>司教</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka kenchikuka shogun daishonin"><img src="img/img-sorubonrusu.png" width="100" height="145" alt="">ソウルボーンルス
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan geijutsuka shogun daishonin"><img src="img/img-tamamo.png" width="100" height="145" alt="">玉藻
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mori gaikoukan kenchikuka shikyo shogun"><img src="img/img-tengu.png" width="100" height="145" alt="">テング
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="hi gaikoukan geinin kenchikuka daishonin"><img src="img/img-fuantafuin.png" width="100" height="145" alt="">ファンタフィン
+          <ul>
+            <li>外交官</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan geijutsuka shikyo shogun"><img src="img/img-burutaru.png" width="100" height="145" alt="">ブルータル
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="mizu geijutsuka kenchikuka shikyo daishonin"><img src="img/img-heruhaundo.png" width="100" height="145" alt="">ヘルハウンド
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mori geijutsuka geinin shikyo daishonin"><img src="img/img-horimisuto.png" width="100" height="145" alt="">ホーリーミスト
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>司教</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mori gaikoukan geinin shikyo shogun"><img src="img/img-borukeba.png" width="100" height="145" alt="">ボルケーバ
+          <ul>
+            <li>外交官</li>
+            <li>芸人</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="mizu geinin kenchikuka shikyo daishonin"><img src="img/img-maddokoroni.png" width="100" height="145" alt="">マッドコロニー
+          <ul>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="yami kenchikuka shikyo shogun daishonin"><img src="img/img-mimikku.png" width="100" height="145" alt="">ミミック
+          <ul>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan geinin kenchikuka daishonin"><img src="img/img-mudan.png" width="100" height="145" alt="">ムーダン
+          <ul>
+            <li>外交官</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka geinin kenchikuka daishonin"><img src="img/img-mohikanoru.png" width="100" height="145" alt="">モヒカンオール
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="yami geijutsuka kenchikuka shogun daishonin"><img src="img/img-enifua.png" width="100" height="145" alt="">エニファー
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mori geijutsuka kenchikuka shikyo shogun"><img src="img/img-sekeru.png" width="100" height="145" alt="">セケル
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="mizu geijutsuka kenchikuka shikyo shogun"><img src="img/img-dao.png" width="100" height="145" alt="">ダーオ
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan geijutsuka shikyo shogun"><img src="img/img-deishogun.png" width="100" height="145" alt="">デイ将軍
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan geijutsuka geinin daishonin"><img src="img/img-hainzuhoku.png" width="100" height="145" alt="">ハインズホーク
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hi gaikoukan kenchikuka shikyo daishonin"><img src="img/img-pasufuainda.png" width="100" height="145" alt="">パスファインダー
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mori gaikoukan shikyo shogun daishonin"><img src="img/img-benera.png" width="100" height="145" alt="">ベネラ
+          <ul>
+            <li>外交官</li>
+            <li>司教</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka kenchikuka shogun daishonin"><img src="img/img-magumakoroni.png" width="100" height="145" alt="">マグマコロニー
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan kenchikuka shikyo daishonin"><img src="img/img-rautoru.png" width="100" height="145" alt="">ラウトル
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan kenchikuka shikyo shogun"><img src="img/img-rozettakyatto.png" width="100" height="145" alt="">ロゼッタキャット
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="hi kishi kenchikuka sagishi shikyo daishonin"><img src="img/img-oberisuku.png" width="100" height="145" alt="">オベリスク
+          <ul>
+            <li>騎士</li>
+            <li>建築家</li>
+            <li>詐欺師</li>
+            <li>司教</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan geijutsuka shikyo tetsugakusha yamishonin"><img src="img/img-kanopusu.png" width="100" height="145" alt="">カノープス
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>哲学者</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mizu geijutsuka shikyo daishonin majo mandanka"><img src="img/img-desuama.png" width="100" height="145" alt="">デスアーマー
+          <ul>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>大商人</li>
+            <li>魔女</li>
+            <li>漫談家</li>
+          </ul>
+        </div>
+        <div class="mori gaikoukan kishi geijutsuka daishonin renkinjutsushi"><img src="img/img-demeteru.png" width="100" height="145" alt="">デメーテル
+          <ul>
+            <li>外交官</li>
+            <li>騎士</li>
+            <li>芸術家</li>
+            <li>大商人</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="mori gaikoukan kishi geijutsuka kenchikuka tetsugakusha"><img src="img/img-haiania.png" width="100" height="145" alt="">ハイアニア
+          <ul>
+            <li>外交官</li>
+            <li>騎士</li>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>哲学者</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan kaizoku kenchikuka shikyo shisuta"><img src="img/img-haigurinkuotsu.png" width="100" height="145" alt="">ハイグリンクォーツ
+          <ul>
+            <li>外交官</li>
+            <li>海賊</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>シスター</li>
+          </ul>
+        </div>
+        <div class="hikari geijutsuka kenchikuka shisuta daishonin toshihyoronka"><img src="img/img-haireddokuotsu.png" width="100" height="145" alt="">ハイレッドクォーツ
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>シスター</li>
+            <li>大商人</li>
+            <li>都市評論家</li>
+          </ul>
+        </div>
+        <div class="mori gaikoukan kishi geinin kenchikuka zeikinchoshukan"><img src="img/img-banubo.png" width="100" height="145" alt="">バヌボ
+          <ul>
+            <li>外交官</li>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>税金徴収官</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan sagishi shikyo daishonin majo"><img src="img/img-pieruderu.png" width="100" height="145" alt="">ピエールデル
+          <ul>
+            <li>外交官</li>
+            <li>詐欺師</li>
+            <li>司教</li>
+            <li>大商人</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="yami kakumeika geinin shikyo shijin daishonin"><img src="img/img-herugeto.png" width="100" height="145" alt="">ヘルゲート
+          <ul>
+            <li>革命家</li>
+            <li>芸人</li>
+            <li>司教</li>
+            <li>詩人</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hikari geijutsuka shikyo shisuta daishonin mandanka"><img src="img/img-bontoekkusu.png" width="100" height="145" alt="">ボーントエックス
+          <ul>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>シスター</li>
+            <li>大商人</li>
+            <li>漫談家</li>
+          </ul>
+        </div>
+        <div class="yami kakumeika geinin kenchikuka shikyo yamishonin"><img src="img/img-minikyon.png" width="100" height="145" alt="">ミニキョン
+          <ul>
+            <li>革命家</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mizu kishi geijutsuka geinin shikyo zeikinchoshukan"><img src="img/img-meruburein.png" width="100" height="145" alt="">メルブレイン
+          <ul>
+            <li>騎士</li>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>司教</li>
+            <li>税金徴収官</li>
+          </ul>
+        </div>
+        <div class="hi geinin kenchikuka shogun zeikinchoshukan majo"><img src="img/img-rameri.png" width="100" height="145" alt="">ラメリ
+          <ul>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>将軍</li>
+            <li>税金徴収官</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="mori geijutsuka geinin sagishi daishonin majo"><img src="img/img-rupansu.png" width="100" height="145" alt="">ルパンス
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>詐欺師</li>
+            <li>大商人</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka geinin kenchikuka shijin mandanka"><img src="img/img-aisudebiru.png" width="100" height="145" alt="">アイスデビル
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>詩人</li>
+            <li>漫談家</li>
+          </ul>
+        </div>
+        <div class="mizu kishi geinin kenchikuka shikyo mandanka"><img src="img/img-akachochin.png" width="100" height="145" alt="">赤提灯
+          <ul>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>漫談家</li>
+          </ul>
+        </div>
+        <div class="mori kaizoku geinin kenchikuka shikyo shijin"><img src="img/img-ishisu.png" width="100" height="145" alt="">イシス
+          <ul>
+            <li>海賊</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>詩人</li>
+          </ul>
+        </div>
+        <div class="yami kishi geijutsuka geinin kenchikuka sagishi"><img src="img/img-kyassuruheddo.png" width="100" height="145" alt="">キャッスルヘッド
+          <ul>
+            <li>騎士</li>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>詐欺師</li>
+          </ul>
+        </div>
+        <div class="hi geinin shikyo shijin shogun renkinjutsushi"><img src="img/img-gurinkuotsu.png" width="100" height="145" alt="">グリーンクォーツ
+          <ul>
+            <li>芸人</li>
+            <li>司教</li>
+            <li>詩人</li>
+            <li>将軍</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="mori geijutsuka shikyo zeikinchoshukan daishonin majo"><img src="img/img-kunpa.png" width="100" height="145" alt="">クンパ
+          <ul>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>税金徴収官</li>
+            <li>大商人</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka geinin shudoshi shogun zeikinchoshukan"><img src="img/img-gosutobeibi.png" width="100" height="145" alt="">ゴーストベイビー
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>修道士</li>
+            <li>将軍</li>
+            <li>税金徴収官</li>
+          </ul>
+        </div>
+        <div class="mizu geijutsuka kenchikuka shikyo shisuta mandanka"><img src="img/img-sunippi.png" width="100" height="145" alt="">スニッピー
+          <ul>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>シスター</li>
+            <li>漫談家</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka geinin shudoshi daishonin tetsugakusha"><img src="img/img-sobeku.png" width="100" height="145" alt="">ソベク
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>修道士</li>
+            <li>大商人</li>
+            <li>哲学者</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan geinin shogun toshihyoronka majo"><img src="img/img-donatosu.png" width="100" height="145" alt="">ドナトス
+          <ul>
+            <li>外交官</li>
+            <li>芸人</li>
+            <li>将軍</li>
+            <li>都市評論家</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan geinin shogun tetsugakusha yamishonin"><img src="img/img-nefuteisu.png" width="100" height="145" alt="">ネフティス
+          <ul>
+            <li>外交官</li>
+            <li>芸人</li>
+            <li>将軍</li>
+            <li>哲学者</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mori geijutsuka shikyo shisuta zeikinchoshukan daishonin"><img src="img/img-haitempura.png" width="100" height="145" alt="">ハイテンプラー
+          <ul>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>シスター</li>
+            <li>税金徴収官</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hikari kishi geinin kenchikuka shikyo renkinjutsushi"><img src="img/img-badoredei.png" width="100" height="145" alt="">バードレディー
+          <ul>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="hi geijutsuka geinin shijin shogun zeikinchoshukan"><img src="img/img-peppe.png" width="100" height="145" alt="">ペッペ
+          <ul>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>詩人</li>
+            <li>将軍</li>
+            <li>税金徴収官</li>
+          </ul>
+        </div>
+        <div class="hikari shikyo shisuta shogun daishonin tetsugakusha"><img src="img/img-merupuraizu.png" width="100" height="145" alt="">メルプライズ
+          <ul>
+            <li>司教</li>
+            <li>シスター</li>
+            <li>将軍</li>
+            <li>大商人</li>
+            <li>哲学者</li>
+          </ul>
+        </div>
+        <div class="mizu geinin shudoshi daishonin toshihyoronka renkinjutsushi"><img src="img/img-aotengu.png" width="100" height="145" alt="">青テング
+          <ul>
+            <li>芸人</li>
+            <li>修道士</li>
+            <li>大商人</li>
+            <li>都市評論家</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="hi kaizoku geinin shikyo toshihyoronka yamishonin"><img src="img/img-anubisu.png" width="100" height="145" alt="">アヌビス
+          <ul>
+            <li>海賊</li>
+            <li>芸人</li>
+            <li>司教</li>
+            <li>都市評論家</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hikari kakumeika sagishi shudoshi shogun daishonin"><img src="img/img-arubanakku.png" width="100" height="145" alt="">アルバナック
+          <ul>
+            <li>革命家</li>
+            <li>詐欺師</li>
+            <li>修道士</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="yami kishi geinin kenchikuka zeikinchoshukan mandanka"><img src="img/img-gaikotsukyonshi.png" width="100" height="145" alt="">骸骨キョンシー
+          <ul>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>税金徴収官</li>
+            <li>漫談家</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan kakumeika kishi kenchikuka tetsugakusha"><img src="img/img-kurerubuo.png" width="100" height="145" alt="">クレルブォー
+          <ul>
+            <li>外交官</li>
+            <li>革命家</li>
+            <li>騎士</li>
+            <li>建築家</li>
+            <li>哲学者</li>
+          </ul>
+        </div>
+        <div class="hi kaizoku geinin kenchikuka yamishonin renkinjutsushi"><img src="img/img-shimeton.png" width="100" height="145" alt="">シメトーン
+          <ul>
+            <li>海賊</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>闇商人</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="mizu kenchikuka shisuta daishonin tetsugakusha toshihyoronka"><img src="img/img-sufuinkusuheddo.png" width="100" height="145" alt="">スフィンクスヘッド
+          <ul>
+            <li>建築家</li>
+            <li>シスター</li>
+            <li>大商人</li>
+            <li>哲学者</li>
+            <li>都市評論家</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan kaizoku kakumeika geijutsuka yamishonin"><img src="img/img-seruketto.png" width="100" height="145" alt="">セルケット
+          <ul>
+            <li>外交官</li>
+            <li>海賊</li>
+            <li>革命家</li>
+            <li>芸術家</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mori kakumeika geinin kenchikuka shudoshi renkinjutsushi"><img src="img/img-dakumasuta.png" width="100" height="145" alt="">ダークマスター
+          <ul>
+            <li>革命家</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>修道士</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="mori kishi sagishi shogun daishonin toshihyoronka"><img src="img/img-hinako.png" width="100" height="145" alt="">ヒナコ
+          <ul>
+            <li>騎士</li>
+            <li>詐欺師</li>
+            <li>将軍</li>
+            <li>大商人</li>
+            <li>都市評論家</li>
+          </ul>
+        </div>
+        <div class="hi gaikoukan geinin shisuta mandanka renkinjutsushi"><img src="img/img-abo.png" width="100" height="145" alt="">アボ
+          <ul>
+            <li>外交官</li>
+            <li>芸人</li>
+            <li>シスター</li>
+            <li>漫談家</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="hikari kaizoku geinin shogun mandanka yamishonin"><img src="img/img-gyaruraimu.png" width="100" height="145" alt="">ギャルライム
+          <ul>
+            <li>海賊</li>
+            <li>芸人</li>
+            <li>将軍</li>
+            <li>漫談家</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="hikari kakumeika kishi geijutsuka sagishi shogun"><img src="img/img-sakkara.png" width="100" height="145" alt="">サッカラ
+          <ul>
+            <li>革命家</li>
+            <li>騎士</li>
+            <li>芸術家</li>
+            <li>詐欺師</li>
+            <li>将軍</li>
+          </ul>
+        </div>
+        <div class="mori gaikoukan geinin shudoshi tetsugakusha renkinjutsushi"><img src="img/img-somi.png" width="100" height="145" alt="">ソミ
+          <ul>
+            <li>外交官</li>
+            <li>芸人</li>
+            <li>修道士</li>
+            <li>哲学者</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="yami kaizoku shikyo shogun tetsugakusha yamishonin"><img src="img/img-tadakatsu.png" width="100" height="145" alt="">タダカツ
+          <ul>
+            <li>海賊</li>
+            <li>司教</li>
+            <li>将軍</li>
+            <li>哲学者</li>
+            <li>闇商人</li>
+          </ul>
+        </div>
+        <div class="mizu gaikoukan kakumeika geijutsuka majo renkinjutsushi"><img src="img/img-neoto.png" width="100" height="145" alt="">ネオート
+          <ul>
+            <li>外交官</li>
+            <li>革命家</li>
+            <li>芸術家</li>
+            <li>魔女</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="hi kaizoku kishi geinin zeikinchoshukan daishonin"><img src="img/img-fuimorin.png" width="100" height="145" alt="">フィモリン
+          <ul>
+            <li>海賊</li>
+            <li>騎士</li>
+            <li>芸人</li>
+            <li>税金徴収官</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan kenchikuka shijin zeikinchoshukan mandanka"><img src="img/img-poryupemosu.png" width="100" height="145" alt="">ポリュペモス
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>詩人</li>
+            <li>税金徴収官</li>
+            <li>漫談家</li>
+          </ul>
+        </div>
+        <div class="hi kakumeika geinin shijin shogun renkinjutsushi"><img src="img/img-horusu.png" width="100" height="145" alt="">ホルス
+          <ul>
+            <li>革命家</li>
+            <li>芸人</li>
+            <li>詩人</li>
+            <li>将軍</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="mori kaizoku shikyo daishonin tetsugakusha majo"><img src="img/img-monto.png" width="100" height="145" alt="">モント
+          <ul>
+            <li>海賊</li>
+            <li>司教</li>
+            <li>大商人</li>
+            <li>哲学者</li>
+            <li>魔女</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan kenchikuka sagishi daishonin renkinjutsushi"><img src="img/img-uotakuotsu.png" width="100" height="145" alt="">ウォータークォーツ
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>詐欺師</li>
+            <li>大商人</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="mizu kaizoku kakumeika geijutsuka shogun daishonin"><img src="img/img-garukyonshi.png" width="100" height="145" alt="">ガールキョンシー
+          <ul>
+            <li>海賊</li>
+            <li>革命家</li>
+            <li>芸術家</li>
+            <li>将軍</li>
+            <li>大商人</li>
+          </ul>
+        </div>
+        <div class="hikari geinin sagishi shikyo daishonin toshihyoronka"><img src="img/img-jiettsu.png" width="100" height="145" alt="">ジェッツ
+          <ul>
+            <li>芸人</li>
+            <li>詐欺師</li>
+            <li>司教</li>
+            <li>大商人</li>
+            <li>都市評論家</li>
+          </ul>
+        </div>
+        <div class="hi gaikoukan kenchikuka shikyo zeikinchoshukan"><img src="img/img-supinattsu.png" width="100" height="145" alt="">スピナッツ
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>税金徴収官</li>
+          </ul>
+        </div>
+        <div class="hikari kaizoku geijutsuka shikyo daishonin mandanka"><img src="img/img-furikkusudoggu.png" width="100" height="145" alt="">フリックスドッグ
+          <ul>
+            <li>海賊</li>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>大商人</li>
+            <li>漫談家</li>
+          </ul>
+        </div>
+        <div class="mori kakumeika geijutsuka kenchikuka daishonin tetsugakusha"><img src="img/img-kuroguren.png" width="100" height="145" alt="">クログレン
+          <ul>
+            <li>革命家</li>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>大商人</li>
+            <li>哲学者</li>
+          </ul>
+        </div>
+        <div class="hikari gaikoukan kenchikuka zeikinchoshukan daishonin mandanka"><img src="img/img-haiuotakuotsu.png" width="100" height="145" alt="">ハイウォータークォーツ
+          <ul>
+            <li>外交官</li>
+            <li>建築家</li>
+            <li>税金徴収官</li>
+            <li>大商人</li>
+            <li>漫談家</li>
+          </ul>
+        </div>
+        <div class="yami gaikoukan geijutsuka geinin tetsugakusha mandanka"><img src="img/img-boreioni.png" width="100" height="145" alt="">亡霊鬼
+          <ul>
+            <li>外交官</li>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>哲学者</li>
+            <li>漫談家</li>
+          </ul>
+        </div>
+        <div class="yami kaizoku geijutsuka kenchikuka shikyo renkinjutsushi"><img src="img/img-ranka.png" width="100" height="145" alt="">蘭香
+          <ul>
+            <li>海賊</li>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div class="mizu kakumeika geijutsuka geinin shogun toshihyoronka"><img src="img/img-rukurero.png" width="100" height="145" alt="">ルクレーロ
+          <ul>
+            <li>革命家</li>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>将軍</li>
+            <li>都市評論家</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="tab" id="fac">
+      <h2>訪問者の好みの施設</h2>
+      <div class="guide">
+        <div class="gaikoukan">
+          <h3>外交官</h3>
+          <ul>
+            <li>武器屋</li>
+            <li>ポーション屋</li>
+            <li>公園</li>
+            <li>ギルド</li>
+            <li>銀行</li>
+            <li>天文台</li>
+          </ul>
+        </div>
+        <div class="kaizoku">
+          <h3>海賊</h3>
+          <ul>
+            <li>武器屋</li>
+            <li>銭湯</li>
+            <li>寺院</li>
+            <li>ギルド</li>
+            <li>博物館</li>
+            <li>王宮</li>
+          </ul>
+        </div>
+        <div class="kakutouka">
+          <h3>格闘家</h3>
+          <ul>
+            <li>旅館</li>
+            <li>武器屋</li>
+            <li>防具屋</li>
+            <li>銭湯</li>
+            <li>病院</li>
+          </ul>
+        </div>
+        <div class="kakumeika">
+          <h3>革命家</h3>
+          <ul>
+            <li>防具屋</li>
+            <li>アクセサリー屋</li>
+            <li>公園</li>
+            <li>広場</li>
+            <li>天文台</li>
+            <li>刑務所</li>
+          </ul>
+        </div>
+        <div class="kishi">
+          <h3>騎士</h3>
+          <ul>
+            <li>武器屋</li>
+            <li>防具屋</li>
+            <li>雑貨屋</li>
+            <li>市場</li>
+            <li>交易所</li>
+            <li>図書館</li>
+          </ul>
+        </div>
+        <div class="geijutsuka">
+          <h3>芸術家</h3>
+          <ul>
+            <li>雑貨屋</li>
+            <li>アクセサリー屋</li>
+            <li>銭湯</li>
+            <li>交易所</li>
+            <li>図書館</li>
+            <li>博物館</li>
+          </ul>
+        </div>
+        <div class="geinin">
+          <h3>芸人</h3>
+          <ul>
+            <li>防具屋</li>
+            <li>アクセサリー屋</li>
+            <li>公園</li>
+            <li>ギルド</li>
+            <li>広場</li>
+            <li>大学</li>
+          </ul>
+        </div>
+        <div class="kenshi">
+          <h3>剣士</h3>
+          <ul>
+            <li>旅館</li>
+            <li>武器屋</li>
+            <li>防具屋</li>
+            <li>銭湯</li>
+            <li>病院</li>
+          </ul>
+        </div>
+        <div class="kenchikuka">
+          <h3>建築家</h3>
+          <ul>
+            <li>雑貨屋</li>
+            <li>アクセサリー屋</li>
+            <li>市場</li>
+            <li>銭湯</li>
+            <li>銀行</li>
+            <li>舞踏会場</li>
+          </ul>
+        </div>
+        <div class="sagishi">
+          <h3>詐欺師</h3>
+          <ul>
+            <li>武器屋</li>
+            <li>ポーション屋</li>
+            <li>病院</li>
+            <li>銀行</li>
+            <li>大学</li>
+            <li>刑務所</li>
+          </ul>
+        </div>
+        <div class="sasurainin">
+          <h3>さすらい人</h3>
+          <ul>
+            <li>旅館</li>
+            <li>武器屋</li>
+            <li>防具屋</li>
+          </ul>
+        </div>
+        <div class="shikyo">
+          <h3>司教</h3>
+          <ul>
+            <li>ポーション屋</li>
+            <li>銭湯</li>
+            <li>病院</li>
+            <li>寺院</li>
+            <li>図書館</li>
+            <li>博物館</li>
+          </ul>
+        </div>
+        <div class="shisuta">
+          <h3>シスター</h3>
+          <ul>
+            <li>防具屋</li>
+            <li>雑貨屋</li>
+            <li>ポーション屋</li>
+            <li>病院</li>
+            <li>寺院</li>
+            <li>広場</li>
+          </ul>
+        </div>
+        <div class="shijin">
+          <h3>詩人</h3>
+          <ul>
+            <li>旅館</li>
+            <li>雑貨屋</li>
+            <li>アクセサリー屋</li>
+            <li>銭湯</li>
+            <li>公園</li>
+            <li>広場</li>
+          </ul>
+        </div>
+        <div class="shudoshi">
+          <h3>修道士</h3>
+          <ul>
+            <li>旅館</li>
+            <li>ポーション屋</li>
+            <li>市場</li>
+            <li>交易所</li>
+            <li>寺院</li>
+            <li>ギルド</li>
+          </ul>
+        </div>
+        <div class="shogun">
+          <h3>将軍</h3>
+          <ul>
+            <li>武器屋</li>
+            <li>防具屋</li>
+            <li>銭湯</li>
+            <li>交易所</li>
+            <li>ギルド</li>
+            <li>舞踏会場</li>
+          </ul>
+        </div>
+        <div class="shonin">
+          <h3>商人</h3>
+          <ul>
+            <li>旅館</li>
+            <li>雑貨屋</li>
+            <li>アクセサリー屋</li>
+            <li>市場</li>
+          </ul>
+        </div>
+        <div class="zeikinchoshukan">
+          <h3>税金徴収官</h3>
+          <ul>
+            <li>旅館</li>
+            <li>市場</li>
+            <li>寺院</li>
+            <li>銀行</li>
+            <li>舞踏会場</li>
+            <li>宮殿金庫</li>
+          </ul>
+        </div>
+        <div class="daishonin">
+          <h3>大商人</h3>
+          <ul>
+            <li>銭湯</li>
+            <li>寺院</li>
+            <li>広場</li>
+            <li>銀行</li>
+            <li>大学</li>
+            <li>天文台</li>
+          </ul>
+        </div>
+        <div class="daifugo">
+          <h3>大富豪</h3>
+          <ul>
+            <li>大学</li>
+            <li>天文台</li>
+            <li>刑務所</li>
+            <li>カジノ</li>
+            <li>宮殿金庫</li>
+            <li>王宮</li>
+          </ul>
+        </div>
+        <div class="tetsugakusha">
+          <h3>哲学者</h3>
+          <ul>
+            <li>防具屋</li>
+            <li>銭湯</li>
+            <li>公園</li>
+            <li>図書館</li>
+            <li>博物館</li>
+            <li>宮殿金庫</li>
+          </ul>
+        </div>
+        <div class="tozoku">
+          <h3>盗賊</h3>
+          <ul>
+            <li>防具屋</li>
+            <li>ポーション屋</li>
+            <li>アクセサリー屋</li>
+            <li>市場</li>
+            <li>交易所</li>
+          </ul>
+        </div>
+        <div class="toshihyoronka">
+          <h3>都市評論家</h3>
+          <ul>
+            <li>雑貨屋</li>
+            <li>アクセサリー屋</li>
+            <li>交易所</li>
+            <li>図書館</li>
+            <li>大学</li>
+            <li>王宮</li>
+          </ul>
+        </div>
+        <div class="dorobo">
+          <h3>泥棒</h3>
+          <ul>
+            <li>武器屋</li>
+            <li>ポーション屋</li>
+            <li>アクセサリー屋</li>
+            <li>銭湯</li>
+          </ul>
+        </div>
+        <div class="nofu">
+          <h3>農夫</h3>
+          <ul>
+            <li>雑貨屋</li>
+            <li>ポーション屋</li>
+            <li>市場</li>
+            <li>銭湯</li>
+          </ul>
+        </div>
+        <div class="hanta">
+          <h3>ハンター</h3>
+          <ul>
+            <li>旅館</li>
+            <li>武器屋</li>
+            <li>アクセサリー屋</li>
+            <li>市場</li>
+          </ul>
+        </div>
+        <div class="bokenka">
+          <h3>冒険家</h3>
+          <ul>
+            <li>旅館</li>
+            <li>防具屋</li>
+            <li>雑貨屋</li>
+          </ul>
+        </div>
+        <div class="majo">
+          <h3>魔女</h3>
+          <ul>
+            <li>ポーション屋</li>
+            <li>市場</li>
+            <li>病院</li>
+            <li>寺院</li>
+            <li>公園</li>
+            <li>図書館</li>
+          </ul>
+        </div>
+        <div class="mahotsukai">
+          <h3>魔法使い</h3>
+          <ul>
+            <li>旅館</li>
+            <li>雑貨屋</li>
+            <li>ポーション屋</li>
+            <li>アクセサリー屋</li>
+            <li>寺院</li>
+          </ul>
+        </div>
+        <div class="mandanka">
+          <h3>漫談家</h3>
+          <ul>
+            <li>旅館</li>
+            <li>市場</li>
+            <li>病院</li>
+            <li>広場</li>
+            <li>舞踏会場</li>
+            <li>カジノ</li>
+          </ul>
+        </div>
+        <div class="yamishonin">
+          <h3>闇商人</h3>
+          <ul>
+            <li>旅館</li>
+            <li>市場</li>
+            <li>病院</li>
+            <li>交易所</li>
+            <li>公園</li>
+            <li>銀行</li>
+          </ul>
+        </div>
+        <div class="yumitsukai">
+          <h3>弓使い</h3>
+          <ul>
+            <li>武器屋</li>
+            <li>ポーション屋</li>
+            <li>アクセサリー屋</li>
+            <li>市場</li>
+            <li>公園</li>
+          </ul>
+        </div>
+        <div class="ryokosha">
+          <h3>旅行者</h3>
+          <ul>
+            <li>旅館</li>
+            <li>防具屋</li>
+            <li>雑貨屋</li>
+          </ul>
+        </div>
+        <div class="renkinjutsushi">
+          <h3>錬金術師</h3>
+          <ul>
+            <li>雑貨屋</li>
+            <li>ポーション屋</li>
+            <li>交易所</li>
+            <li>ギルド</li>
+            <li>天文台</li>
+            <li>カジノ</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="tab" id="vis">
+      <h2>施設ごとの訪問者</h2>
+      <div class="guide">
+        <div>
+          <h3>旅館 (0.33)</h3>
+          <ul>
+            <li>さすらい人</li>
+            <li>旅行者</li>
+            <li>商人</li>
+            <li>ハンター</li>
+            <li>剣士</li>
+            <li>格闘家</li>
+            <li>魔法使い</li>
+            <li>修道士</li>
+            <li>詩人</li>
+            <li>闇商人</li>
+            <li>漫談家</li>
+            <li>税金徴収官</li>
+          </ul>
+        </div>
+        <div>
+          <h3>武器屋 (0.33)</h3>
+          <ul>
+            <li>さすらい人</li>
+            <li>冒険家</li>
+            <li>ハンター</li>
+            <li>泥棒</li>
+            <li>剣士</li>
+            <li>弓使い</li>
+            <li>格闘家</li>
+            <li>騎士</li>
+            <li>将軍</li>
+            <li>外交官</li>
+            <li>詐欺師</li>
+            <li>海賊</li>
+          </ul>
+        </div>
+        <div>
+          <h3>防具屋 (0.33)</h3>
+          <ul>
+            <li>さすらい人</li>
+            <li>旅行者</li>
+            <li>冒険家</li>
+            <li>剣士</li>
+            <li>盗賊</li>
+            <li>格闘家</li>
+            <li>騎士</li>
+            <li>シスター</li>
+            <li>芸人</li>
+            <li>将軍</li>
+            <li>革命家</li>
+            <li>哲学者</li>
+          </ul>
+        </div>
+        <div>
+          <h3>雑貨屋 (0.33)</h3>
+          <ul>
+            <li>旅行者</li>
+            <li>冒険家</li>
+            <li>商人</li>
+            <li>農夫</li>
+            <li>魔法使い</li>
+            <li>騎士</li>
+            <li>シスター</li>
+            <li>詩人</li>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>都市評論家</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div>
+          <h3>ポーション屋 (0.67)</h3>
+          <ul>
+            <li>農夫</li>
+            <li>泥棒</li>
+            <li>弓使い</li>
+            <li>盗賊</li>
+            <li>魔法使い</li>
+            <li>シスター</li>
+            <li>修道士</li>
+            <li>魔女</li>
+            <li>司教</li>
+            <li>外交官</li>
+            <li>詐欺師</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div>
+          <h3>アクセサリー屋 (0.67)</h3>
+          <ul>
+            <li>商人</li>
+            <li>ハンター</li>
+            <li>泥棒</li>
+            <li>弓使い</li>
+            <li>盗賊</li>
+            <li>魔法使い</li>
+            <li>詩人</li>
+            <li>芸術家</li>
+            <li>芸人</li>
+            <li>建築家</li>
+            <li>革命家</li>
+            <li>都市評論家</li>
+          </ul>
+        </div>
+        <div>
+          <h3>市場 (0.67)</h3>
+          <ul>
+            <li>商人</li>
+            <li>農夫</li>
+            <li>ハンター</li>
+            <li>弓使い</li>
+            <li>盗賊</li>
+            <li>騎士</li>
+            <li>修道士</li>
+            <li>闇商人</li>
+            <li>魔女</li>
+            <li>建築家</li>
+            <li>漫談家</li>
+            <li>税金徴収官</li>
+          </ul>
+        </div>
+        <div>
+          <h3>銭湯 (0.67)</h3>
+          <ul>
+            <li>農夫</li>
+            <li>泥棒</li>
+            <li>剣士</li>
+            <li>格闘家</li>
+            <li>詩人</li>
+            <li>芸術家</li>
+            <li>建築家</li>
+            <li>司教</li>
+            <li>将軍</li>
+            <li>大商人</li>
+            <li>哲学者</li>
+            <li>海賊</li>
+          </ul>
+        </div>
+        <div>
+          <h3>病院 (1.08)</h3>
+          <ul>
+            <li>剣士</li>
+            <li>格闘家</li>
+            <li>シスター</li>
+            <li>闇商人</li>
+            <li>魔女</li>
+            <li>司教</li>
+            <li>漫談家</li>
+            <li>詐欺師</li>
+          </ul>
+        </div>
+        <div>
+          <h3>交易所 (1.08)</h3>
+          <ul>
+            <li>盗賊</li>
+            <li>騎士</li>
+            <li>修道士</li>
+            <li>闇商人</li>
+            <li>芸術家</li>
+            <li>将軍</li>
+            <li>都市評論家</li>
+            <li>錬金術師</li>
+          </ul>
+        </div>
+        <div>
+          <h3>寺院 (1.08)</h3>
+          <ul>
+            <li>魔法使い</li>
+            <li>シスター</li>
+            <li>修道士</li>
+            <li>魔女</li>
+            <li>司教</li>
+            <li>大商人</li>
+            <li>税金徴収官</li>
+            <li>海賊</li>
+          </ul>
+        </div>
+        <div>
+          <h3>公園 (1.08)</h3>
+          <ul>
+            <li>弓使い</li>
+            <li>詩人</li>
+            <li>闇商人</li>
+            <li>魔女</li>
+            <li>芸人</li>
+            <li>外交官</li>
+            <li>革命家</li>
+            <li>哲学者</li>
+          </ul>
+        </div>
+        <div>
+          <h3>ギルド (1.50)</h3>
+          <ul>
+            <li>修道士</li>
+            <li>芸人</li>
+            <li>将軍</li>
+            <li>外交官</li>
+            <li>錬金術師</li>
+            <li>海賊</li>
+          </ul>
+        </div>
+        <div>
+          <h3>広場 (1.50)</h3>
+          <ul>
+            <li>シスター</li>
+            <li>詩人</li>
+            <li>芸人</li>
+            <li>大商人</li>
+            <li>漫談家</li>
+            <li>革命家</li>
+          </ul>
+        </div>
+        <div>
+          <h3>図書館 (1.50)</h3>
+          <ul>
+            <li>騎士</li>
+            <li>魔女</li>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>都市評論家</li>
+            <li>哲学者</li>
+          </ul>
+        </div>
+        <div>
+          <h3>銀行 (1.50)</h3>
+          <ul>
+            <li>闇商人</li>
+            <li>建築家</li>
+            <li>外交官</li>
+            <li>大商人</li>
+            <li>詐欺師</li>
+            <li>税金徴収官</li>
+          </ul>
+        </div>
+        <div>
+          <h3>舞踏会場 (2.08)</h3>
+          <ul>
+            <li>建築家</li>
+            <li>将軍</li>
+            <li>漫談家</li>
+            <li>税金徴収官</li>
+          </ul>
+        </div>
+        <div>
+          <h3>博物館 (2.08)</h3>
+          <ul>
+            <li>芸術家</li>
+            <li>司教</li>
+            <li>哲学者</li>
+            <li>海賊</li>
+          </ul>
+        </div>
+        <div>
+          <h3>大学 (2.08)</h3>
+          <ul>
+            <li>芸人</li>
+            <li>大商人</li>
+            <li>詐欺師</li>
+            <li>都市評論家</li>
+            <li>大富豪</li>
+          </ul>
+        </div>
+        <div>
+          <h3>天文台 (2.08)</h3>
+          <ul>
+            <li>外交官</li>
+            <li>大商人</li>
+            <li>革命家</li>
+            <li>錬金術師</li>
+            <li>大富豪</li>
+          </ul>
+        </div>
+        <div>
+          <h3>刑務所 (2.50)</h3>
+          <ul>
+            <li>詐欺師</li>
+            <li>革命家</li>
+            <li>大富豪</li>
+          </ul>
+        </div>
+        <div>
+          <h3>カジノ (2.50)</h3>
+          <ul>
+            <li>漫談家</li>
+            <li>錬金術師</li>
+            <li>大富豪</li>
+          </ul>
+        </div>
+        <div>
+          <h3>宮殿金庫 (2.50)</h3>
+          <ul>
+            <li>哲学者</li>
+            <li>税金徴収官</li>
+            <li>大富豪</li>
+          </ul>
+        </div>
+        <div>
+          <h3>王宮 (2.50)</h3>
+          <ul>
+            <li>都市評論家</li>
+            <li>海賊</li>
+            <li>大富豪</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="page-top">▲</div>
+</html>
